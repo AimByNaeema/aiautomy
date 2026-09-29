@@ -15,7 +15,39 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { INITIAL_SERVICES } from '../lib/api';
-import { ServiceCardArt, artKindForService } from './ServiceCardArt';
+// Real photos (Unsplash License — free for commercial use), served from Unsplash's CDN.
+const PHOTO = (id: string, w: number) =>
+  `https://images.unsplash.com/photo-${id}?w=${w}&h=${w}&fit=crop&auto=format&q=70`;
+
+const SERVICE_PHOTOS: Record<string, { id: string; alt: string }> = {
+  'custom-ai-agents': { id: '1684369175833-4b445ad6bfb5', alt: 'Friendly AI robot assistant working on a laptop' },
+  'web-development': { id: '1618477388954-7852f32655ec', alt: 'Developer writing website code on a laptop' },
+  'ecommerce-solutions': { id: '1733503747506-773e56e4078f', alt: 'Customer paying online with a card on a laptop' },
+  'ai-business-automation': { id: '1647427060118-4911c9821b82', alt: 'Automated robotic arms working on a production line' },
+  'ai-automation': { id: '1647427060118-4911c9821b82', alt: 'Automated robotic arms working on a production line' },
+  'custom-digital-solutions': { id: '1771923082503-0a3381c46cef', alt: 'Laptop showing a business dashboard' },
+  custom: { id: '1603975711481-18b7aaca4caa', alt: 'System planning with wireframes and sticky notes' },
+};
+
+const ServicePhoto: React.FC<{ photoKey: string }> = ({ photoKey }) => {
+  const photo = SERVICE_PHOTOS[photoKey] || SERVICE_PHOTOS['custom-digital-solutions'];
+  return (
+    <>
+      <img
+        src={PHOTO(photo.id, 600)}
+        srcSet={`${PHOTO(photo.id, 400)} 400w, ${PHOTO(photo.id, 600)} 600w, ${PHOTO(photo.id, 900)} 900w`}
+        sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+        alt={photo.alt}
+        loading="lazy"
+        decoding="async"
+        width={600}
+        height={600}
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-transparent to-slate-950/50" />
+    </>
+  );
+};
 
 export const PlatformSection: React.FC = () => {
   const services = INITIAL_SERVICES;
@@ -77,7 +109,7 @@ export const PlatformSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Cards Grid — image (~75%) on top, text below */}
+        {/* Services Cards Grid — photo (~75%) on top, text below */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
           {services.map((srv) => (
             <Link
@@ -87,7 +119,7 @@ export const PlatformSection: React.FC = () => {
             >
               <div className="relative aspect-square overflow-hidden border-b border-slate-800">
                 <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
-                  <ServiceCardArt kind={artKindForService(srv.slug)} />
+                  <ServicePhoto photoKey={srv.slug} />
                 </div>
                 <span className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-slate-950/80 backdrop-blur text-orange-400 group-hover:bg-orange-500 group-hover:text-white flex items-center justify-center transition-colors">
                   {getServiceIcon(srv.slug)}
@@ -119,7 +151,7 @@ export const PlatformSection: React.FC = () => {
           >
             <div className="relative aspect-square overflow-hidden border-b border-slate-800">
               <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
-                <ServiceCardArt kind="custom" />
+                <ServicePhoto photoKey="custom" />
               </div>
               <span className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-orange-500/20 backdrop-blur text-orange-400 flex items-center justify-center">
                 <Layers className="w-5 h-5" />
