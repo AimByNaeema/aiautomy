@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { PageBanner, StockPhoto } from '../components/StockPhoto';
+import { PROJECT_PHOTOS } from '../components/ProductResearchSection';
 import { Link } from 'react-router-dom';
 import {
   Layers,
@@ -106,6 +108,8 @@ export const ProjectsPage: React.FC = () => {
           </div>
         </div>
 
+        <PageBanner photo="projects" caption="Real products and client systems, built and reviewed together." />
+
         {/* Filter Tabs */}
         <div className="flex items-center justify-center gap-2 overflow-x-auto pb-8">
           {[
@@ -137,6 +141,16 @@ export const ProjectsPage: React.FC = () => {
               className="p-6 sm:p-7 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col justify-between space-y-6 hover:border-slate-700 transition-all shadow-xl"
             >
               <div className="space-y-4">
+                <div className="-mx-6 -mt-6 sm:-mx-7 sm:-mt-7 mb-1 relative overflow-hidden rounded-t-2xl border-b border-slate-800">
+                  <StockPhoto
+                    photo={PROJECT_PHOTOS[proj.id] || 'customAi'}
+                    width={520}
+                    ratio={16 / 10}
+                    sizes="(min-width: 1024px) 400px, 100vw"
+                    className="w-full aspect-[16/10] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />
+                </div>
                 <div className="flex items-center justify-between gap-2">
                   <span className="text-xs font-mono uppercase text-orange-400 font-semibold">{proj.category}</span>
                   {getStatusBadge(proj.status)}

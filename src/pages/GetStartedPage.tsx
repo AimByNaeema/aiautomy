@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import {
   ShieldCheck,
@@ -114,6 +115,8 @@ export const GetStartedPage: React.FC = () => {
             Tell us about your operational requirements. We will prepare an initial architecture proposal.
           </p>
         </div>
+
+        <PageBanner photo="getStarted" caption="Tell us about your idea — we will turn it into a clear project plan." />
 
         {/* Step Progress Bar */}
         {!isCompleted && (

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link, useSearchParams } from 'react-router-dom';
 import {
   BookOpen,
@@ -217,6 +218,8 @@ export const ResourcesPage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <PageBanner photo="resources" caption="Guides and playbooks to help you grow with AI and ecommerce." />
 
         {/* Category Tabs */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2 my-6">

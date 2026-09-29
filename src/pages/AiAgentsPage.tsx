@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Bot,
@@ -181,6 +182,8 @@ export const AiAgentsPage: React.FC = () => {
             </Link>
           </div>
         </div>
+
+        <PageBanner photo="aiAgents" caption="AI digital employees that work alongside your team — with you in control." />
 
         {/* Core Capabilities Pillars */}
         <div className="py-12 border-t border-slate-800/80">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Sparkles,
@@ -258,6 +259,8 @@ export const FeaturesPage: React.FC = () => {
             A comprehensive overview of the specialized features that make AIAUTOMY the highest-ROI intelligence layer for modern brands.
           </p>
         </div>
+
+        <PageBanner photo="features" caption="Clear dashboards and insights so you always know what is working." />
 
         {/* Category Switcher Tabs */}
         <div className="flex items-center justify-center gap-2 flex-wrap my-6">

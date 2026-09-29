@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { useSearchParams, Link } from 'react-router-dom';
 import {
   Mail,
@@ -108,6 +109,8 @@ export const ContactPage: React.FC = () => {
             Tell us what your business needs. We will analyze your requirements and prepare a clear, practical solution architecture.
           </p>
         </div>
+
+        <PageBanner photo="contact" caption="Real people, quick replies — we are here to help with your project." />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Direct Info & Guarantees */}

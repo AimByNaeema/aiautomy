@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   TrendingUp,
@@ -146,6 +147,8 @@ export const SolutionsPage: React.FC = () => {
             Whether you need to capture more leads, assist customers around the clock, upgrade your online presence, or automate operations, we engineer practical, reliable digital solutions.
           </p>
         </div>
+
+        <PageBanner photo="solutions" caption="Practical systems for real businesses — shops, cafes, agencies and online stores." />
 
         {/* Solutions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">

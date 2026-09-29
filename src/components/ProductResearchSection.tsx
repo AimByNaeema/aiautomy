@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+import { StockPhoto, type PhotoKey } from './StockPhoto';
+
+export const PROJECT_PHOTOS: Record<string, PhotoKey> = {
+  'proj-cafebot': 'restaurants',
+  'proj-ecommerce-growth-ai': 'ecommerceGrowth',
+  'proj-custom-ai-agents': 'customAi',
+};
 import { Link } from 'react-router-dom';
 import {
   Layers,
@@ -131,6 +138,17 @@ export const ProductResearchSection: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="p-6 sm:p-7 rounded-2xl bg-slate-950 border border-slate-800 shadow-xl space-y-5 text-white h-full flex flex-col justify-between">
               <div className="space-y-4">
+                <div className="-mx-6 -mt-6 sm:-mx-7 sm:-mt-7 mb-2 relative overflow-hidden rounded-t-2xl border-b border-slate-800">
+                  <StockPhoto
+                    key={selectedProject.id}
+                    photo={PROJECT_PHOTOS[selectedProject.id] || 'customAi'}
+                    width={720}
+                    ratio={16 / 7}
+                    sizes="(min-width: 1024px) 600px, 100vw"
+                    className="w-full h-44 sm:h-52 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
+                </div>
                 <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                   <div>
                     <span className="text-xs font-mono text-slate-400 uppercase">{selectedProject.category}</span>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Check,
@@ -120,6 +121,8 @@ export const PricingPage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <PageBanner photo="pricing" caption="Clear scope, fixed milestones and a fair price — agreed before we start." />
 
         {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch text-left">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Layout,
@@ -163,6 +164,8 @@ export const WebDevelopmentPage: React.FC = () => {
             </Link>
           </div>
         </div>
+
+        <PageBanner photo="webDevelopment" caption="Fast, modern websites built by engineers who care about every detail." />
 
         {/* Standards Grid */}
         <div className="py-12 border-t border-slate-800/80">

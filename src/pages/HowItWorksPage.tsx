@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Compass,
@@ -129,6 +130,8 @@ export const HowItWorksPage: React.FC = () => {
             Every project follows a structured, transparent 6-step lifecycle to ensure technical excellence, zero unapproved actions, and measurable business outcomes.
           </p>
         </div>
+
+        <PageBanner photo="howItWorks" caption="Every project starts with a clear plan, mapped out together with you." />
 
         {/* 6 Step Process Cards */}
         <div className="space-y-6 text-left">

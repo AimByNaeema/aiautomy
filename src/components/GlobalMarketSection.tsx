@@ -1,4 +1,13 @@
 import React, { useState } from 'react';
+import { StockPhoto, type PhotoKey } from './StockPhoto';
+
+const INDUSTRY_PHOTOS: Record<string, PhotoKey> = {
+  'restaurants-cafes': 'restaurants',
+  'ecommerce-retail': 'ecommerceRetail',
+  'real-estate': 'realEstate',
+  'customer-support': 'customerSupport',
+  'sales-lead-intake': 'sales',
+};
 import { Link } from 'react-router-dom';
 import {
   Utensils,
@@ -163,6 +172,18 @@ export const GlobalMarketSection: React.FC = () => {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch text-left">
           {/* Left Column: Overview & Badge */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-xl">
+              <StockPhoto
+                key={currentCat.id}
+                photo={INDUSTRY_PHOTOS[currentCat.id] || 'customAi'}
+                width={640}
+                ratio={16 / 9}
+                sizes="(min-width: 1024px) 480px, 100vw"
+                className="w-full aspect-video object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent" />
+              <span className="absolute bottom-3 left-4 text-xs font-semibold text-white">{currentCat.name}</span>
+            </div>
             <div className="p-6 sm:p-7 rounded-2xl bg-slate-950/90 border border-slate-800 shadow-xl space-y-5 flex-1 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">

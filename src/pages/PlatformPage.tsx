@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { PageBanner } from '../components/StockPhoto';
 import { Link } from 'react-router-dom';
 import {
   Network,
@@ -127,6 +128,8 @@ export const PlatformPage: React.FC = () => {
             </Link>
           </div>
         </div>
+
+        <PageBanner photo="platform" caption="Reliable, secure infrastructure behind every agent and website we ship." />
 
         {/* 4-Layer System Architecture Diagram */}
         <div className="my-12 p-6 sm:p-8 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-sm">
