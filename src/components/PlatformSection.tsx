@@ -15,6 +15,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { INITIAL_SERVICES } from '../lib/api';
+import { ServiceCardArt, artKindForService } from './ServiceCardArt';
 
 export const PlatformSection: React.FC = () => {
   const services = INITIAL_SERVICES;
@@ -28,6 +29,7 @@ export const PlatformSection: React.FC = () => {
       case 'ecommerce-solutions':
         return <Globe className="w-5 h-5" />;
       case 'ai-automation':
+      case 'ai-business-automation':
         return <Zap className="w-5 h-5" />;
       case 'custom-digital-solutions':
         return <Sparkles className="w-5 h-5" />;
@@ -45,6 +47,7 @@ export const PlatformSection: React.FC = () => {
       case 'ecommerce-solutions':
         return '/solutions';
       case 'ai-automation':
+      case 'ai-business-automation':
         return '/solutions';
       case 'custom-digital-solutions':
         return '/solutions';
@@ -74,99 +77,69 @@ export const PlatformSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Cards Grid */}
+        {/* Services Cards Grid — image (~75%) on top, text below */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-          {services.map((srv, idx) => (
-            <div
+          {services.map((srv) => (
+            <Link
               key={srv.id}
-              className="p-6 sm:p-7 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-5 hover:border-slate-700 hover:bg-slate-900 transition-all shadow-lg group"
+              to={getServiceLink(srv.slug)}
+              className="rounded-2xl overflow-hidden bg-slate-900/80 border border-slate-800 flex flex-col hover:border-orange-500/40 hover:bg-slate-900 transition-all shadow-lg group focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-11 h-11 rounded-xl bg-slate-800 text-orange-400 group-hover:bg-orange-500 group-hover:text-white flex items-center justify-center transition-colors shadow-sm">
-                    {getServiceIcon(srv.slug)}
-                  </div>
-                  <span className="text-xs font-mono text-slate-500 group-hover:text-orange-400">
-                    0{srv.sort_order}
-                  </span>
+              <div className="relative aspect-square overflow-hidden border-b border-slate-800">
+                <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
+                  <ServiceCardArt kind={artKindForService(srv.slug)} />
                 </div>
-
-                <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
-                    {srv.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                    {srv.short_description}
-                  </p>
-                </div>
-
-                <div className="pt-2 border-t border-slate-800/80 space-y-2">
-                  <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
-                    Core Capabilities
-                  </span>
-                  {(srv.key_features || []).map((feat, fIdx) => (
-                    <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-400">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>{feat}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
-                <Link
-                  to={getServiceLink(srv.slug)}
-                  className="text-xs font-semibold text-orange-400 hover:text-orange-300 flex items-center gap-1"
-                >
-                  <span>Explore Capabilities</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-                </Link>
-                <span className="text-[10px] font-mono text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
-                  Available
+                <span className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-slate-950/80 backdrop-blur text-orange-400 group-hover:bg-orange-500 group-hover:text-white flex items-center justify-center transition-colors">
+                  {getServiceIcon(srv.slug)}
+                </span>
+                <span className="absolute top-3 right-3 text-[11px] font-mono text-slate-300 bg-slate-950/70 px-2 py-0.5 rounded">
+                  0{srv.sort_order}
                 </span>
               </div>
-            </div>
+
+              <div className="px-5 py-4 flex flex-col gap-1.5">
+                <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-orange-400 transition-colors leading-snug">
+                  {srv.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-2">
+                  {srv.short_description}
+                </p>
+                <span className="text-xs font-semibold text-orange-400 group-hover:text-orange-300 flex items-center gap-1">
+                  Explore Capabilities
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                </span>
+              </div>
+            </Link>
           ))}
 
           {/* Sixth Special Card: Custom Engineering Scope */}
-          <div className="p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-orange-500/30 flex flex-col justify-between space-y-5 shadow-xl">
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="w-11 h-11 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center">
-                  <Layers className="w-5 h-5" />
-                </div>
-                <span className="text-xs font-mono text-orange-400 font-bold">Bespoke</span>
+          <Link
+            to="/contact"
+            className="rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 to-slate-950 border border-orange-500/30 flex flex-col shadow-xl group focus:outline-none focus:ring-2 focus:ring-orange-500"
+          >
+            <div className="relative aspect-square overflow-hidden border-b border-slate-800">
+              <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
+                <ServiceCardArt kind="custom" />
               </div>
-
-              <div>
-                <h3 className="text-lg font-bold text-white">Custom System Scoping</h3>
-                <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                  Have unique operational requirements? We engineer custom multi-agent workflows, API adapters, and dedicated database schemas from scratch.
-                </p>
-              </div>
-
-              <div className="pt-2 border-t border-slate-800/80 space-y-2">
-                <div className="flex items-center gap-2 text-xs text-slate-300">
-                  <Lock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                  <span>Strict security rules & human approvals</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-slate-300">
-                  <Database className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                  <span>PostgreSQL data persistence</span>
-                </div>
-              </div>
+              <span className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-orange-500/20 backdrop-blur text-orange-400 flex items-center justify-center">
+                <Layers className="w-5 h-5" />
+              </span>
+              <span className="absolute top-3 right-3 text-[11px] font-mono text-orange-400 font-bold bg-slate-950/70 px-2 py-0.5 rounded">
+                Bespoke
+              </span>
             </div>
 
-            <div className="pt-4 border-t border-slate-800">
-              <Link
-                to="/contact"
-                className="w-full py-2.5 px-4 rounded-xl bg-orange-500 hover:bg-orange-600 font-bold text-xs text-white flex items-center justify-center gap-2 shadow-md shadow-orange-500/20"
-              >
-                <span>Request Custom Scoping</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+            <div className="px-5 py-4 flex flex-col gap-1.5">
+              <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-orange-400 transition-colors leading-snug">Custom System Scoping</h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-2">
+                Have unique operational requirements? We engineer custom multi-agent workflows, API adapters, and dedicated database schemas from scratch.
+              </p>
+              <span className="text-xs font-semibold text-orange-400 group-hover:text-orange-300 flex items-center gap-1">
+                Request Custom Scoping
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </span>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
