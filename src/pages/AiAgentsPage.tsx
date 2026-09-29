@@ -29,7 +29,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 
 export const AiAgentsPage: React.FC = () => {
   usePageMetadata({
-    title: 'Custom AI Agents & Digital Employees | AI AGENT STUDIO',
+    title: 'Custom AI Agents & Digital Employees | AIAUTOMY',
     description: 'Specialized AI digital employees designed around your business workflows, customers, and operational goals. Custom built with human approval controls.',
   });
 

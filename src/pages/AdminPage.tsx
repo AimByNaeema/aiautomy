@@ -61,7 +61,7 @@ const ADMIN_EMAILS = ['aimbynaeema@gmail.com', 'aiagentstudioo@gmail.com'];
 
 export const AdminPage: React.FC = () => {
   usePageMetadata({
-    title: 'Admin Management & Lead CRM | AI AGENT STUDIO',
+    title: 'Admin Management & Lead CRM | AIAUTOMY',
     description: 'Internal administration portal for managing project inquiries, portfolio records, and platform telemetry.',
     noIndex: true,
   });
@@ -264,7 +264,7 @@ export const AdminPage: React.FC = () => {
             AI
           </div>
           <div className="space-y-1">
-            <h1 className="text-xl font-bold text-white">AI AGENT STUDIO</h1>
+            <h1 className="text-xl font-bold text-white">AIAUTOMY</h1>
             <p className="text-xs text-slate-400">Restricted Administration & CRM Portal</p>
           </div>
 
@@ -340,7 +340,7 @@ export const AdminPage: React.FC = () => {
             <Breadcrumbs items={[{ label: 'Admin Portal & Inquiries' }]} />
             <div className="flex items-center gap-3 pt-2">
               <h1 className="text-2xl font-extrabold text-white tracking-tight">
-                AI AGENT STUDIO <span className="text-orange-500">Control Center</span>
+                AIAUTOMY <span className="text-orange-500">Control Center</span>
               </h1>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-slate-900 border border-slate-700 text-slate-300">
                 <span className={`w-2 h-2 rounded-full ${isBackendConfigured ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'}`} />
@@ -765,7 +765,7 @@ export const AdminPage: React.FC = () => {
           <div className="pt-6 space-y-6 text-left">
             <div>
               <h2 className="text-lg font-bold text-white">Agency Services Catalog</h2>
-              <p className="text-xs text-slate-400">5 primary service offerings delivered by AI AGENT STUDIO.</p>
+              <p className="text-xs text-slate-400">5 primary service offerings delivered by AIAUTOMY.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

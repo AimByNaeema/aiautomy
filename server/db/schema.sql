@@ -1,5 +1,5 @@
 -- ============================================================================
--- AI AGENT STUDIO — PostgreSQL schema (Railway migration)
+-- AIAUTOMY — PostgreSQL schema (Railway migration)
 --
 -- Replaces the Firestore collections previously defined in firestore.rules.
 -- Field names and shapes mirror src/types.ts exactly so the frontend's

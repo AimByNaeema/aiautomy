@@ -21,7 +21,7 @@ import { submitProjectLead } from '../lib/api';
 
 export const GetStartedPage: React.FC = () => {
   usePageMetadata({
-    title: 'Get Started: Project Discovery & Custom Scope | AI AGENT STUDIO',
+    title: 'Get Started: Project Discovery & Custom Scope | AIAUTOMY',
     description: 'Tell us about your project requirements and operational goals. We will prepare an initial discovery roadmap and itemized proposal.',
   });
 

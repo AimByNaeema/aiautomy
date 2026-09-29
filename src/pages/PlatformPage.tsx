@@ -31,7 +31,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 export const PlatformPage: React.FC = () => {
   usePageMetadata({
     title: 'Platform Architecture & 9 AI Capabilities',
-    description: 'Explore the multi-agent AI architecture of AI AGENT STUDIO. Learn how our 9 specialized agents coordinate research, website building, SEO, listings, marketing, ads, and analytics.',
+    description: 'Explore the multi-agent AI architecture of AIAUTOMY. Learn how our 9 specialized agents coordinate research, website building, SEO, listings, marketing, ads, and analytics.',
   });
 
   const [activeCapabilityId, setActiveCapabilityId] = useState<string>(CAPABILITIES[0].id);
@@ -109,7 +109,7 @@ export const PlatformPage: React.FC = () => {
             The Multi-Agent AI Platform Built for <span className="text-orange-500">Ecommerce Growth</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-            Unlike siloed point solutions or generic chat assistants, AI AGENT STUDIO deploys a coordinated graph of 9 specialized agents engineered to analyze catalog data, uncover market whitespace, build high-converting storefronts, and execute profit-maximizing growth actions.
+            Unlike siloed point solutions or generic chat assistants, AIAUTOMY deploys a coordinated graph of 9 specialized agents engineered to analyze catalog data, uncover market whitespace, build high-converting storefronts, and execute profit-maximizing growth actions.
           </p>
           <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
             <Link

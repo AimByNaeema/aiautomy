@@ -1,9 +1,9 @@
-# AI AGENT STUDIO — Firebase Backend & Architecture
+# AIAUTOMY — Firebase Backend & Architecture
 
 ## Overview
-**AI AGENT STUDIO** is powered by Google Cloud Firestore and Firebase Authentication for enterprise-grade, real-time data persistence and access control.
+**AIAUTOMY** is powered by Google Cloud Firestore and Firebase Authentication for enterprise-grade, real-time data persistence and access control.
 
-- **Brand:** AI AGENT STUDIO
+- **Brand:** AIAUTOMY
 - **Inquiries:** `aiagentstudioo@gmail.com`
 - **Core Offerings:** Custom AI Agents, Web Development, Ecommerce Solutions, AI Business Automation, Custom Digital Solutions.
 - **Flagship Project:** E-Commerce Growth AI (*In Development / Coming Soon*).

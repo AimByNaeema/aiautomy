@@ -23,7 +23,7 @@ router.post('/', publicWriteLimiter, async (req, res) => {
        ON CONFLICT (email) DO UPDATE SET is_active = true, source_page = EXCLUDED.source_page`,
       [cleanEmail, source_page]
     );
-    return res.status(200).json({ success: true, message: 'Thank you for subscribing to AI AGENT STUDIO updates.' });
+    return res.status(200).json({ success: true, message: 'Thank you for subscribing to AIAUTOMY updates.' });
   } catch (err) {
     console.error('[newsletter] subscribe error:', err);
     return res.status(500).json({ success: false, message: 'Could not subscribe right now. Please try again.' });

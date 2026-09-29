@@ -23,7 +23,7 @@ import { ServiceInterest } from '../types';
 
 export const ContactPage: React.FC = () => {
   usePageMetadata({
-    title: 'Contact & Start Your Project | AI AGENT STUDIO',
+    title: 'Contact & Start Your Project | AIAUTOMY',
     description: 'Tell us about your business, website vision, or AI agent requirements. We build custom digital solutions designed around your needs.',
   });
 

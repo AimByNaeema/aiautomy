@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-base font-bold text-white tracking-tight flex items-center gap-1 font-sans">
-                AI AGENT <span className="text-orange-500 text-xs font-extrabold uppercase px-1.5 py-0.5 rounded bg-orange-500/10 border border-orange-500/30">STUDIO</span>
+                AI<span className="text-orange-500 text-xs font-extrabold uppercase px-1.5 py-0.5 rounded bg-orange-500/10 border border-orange-500/30">AUTOMY</span>
               </span>
               <span className="text-[10px] text-slate-400 font-medium tracking-wider uppercase hidden sm:block">
                 Digital Employees & Websites

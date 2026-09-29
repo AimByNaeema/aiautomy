@@ -21,7 +21,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 
 export const SolutionsPage: React.FC = () => {
   usePageMetadata({
-    title: 'Business Solutions & Digital Capabilities | AI AGENT STUDIO',
+    title: 'Business Solutions & Digital Capabilities | AIAUTOMY',
     description: 'Explore our solutions tailored by business objective: lead capture, 24/7 AI customer assistance, high-performance web development, and workflow automation.',
   });
 

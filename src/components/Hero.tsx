@@ -108,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Eyebrow Pill */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-300">
               <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-              <span className="font-mono text-orange-400 font-bold uppercase tracking-wider">AI AGENT STUDIO</span>
+              <span className="font-mono text-orange-400 font-bold uppercase tracking-wider">AIAUTOMY</span>
               <span className="text-slate-600">|</span>
               <span className="text-slate-400">Custom Engineering</span>
             </div>
@@ -179,7 +179,7 @@ export const Hero: React.FC<HeroProps> = ({
                   <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                   <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                   <div className="w-2.5 h-2.5 rounded-full bg-slate-700" />
-                  <span className="ml-2 font-mono text-[11px] text-slate-400">workspace.studio/architecture</span>
+                  <span className="ml-2 font-mono text-[11px] text-slate-400">aiautomy.com/workspace</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">

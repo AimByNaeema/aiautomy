@@ -27,7 +27,7 @@ import { ProjectRecord } from '../types';
 
 export const ProjectsPage: React.FC = () => {
   usePageMetadata({
-    title: 'Selected Projects & Portfolio | AI AGENT STUDIO',
+    title: 'Selected Projects & Portfolio | AIAUTOMY',
     description: 'Explore our selected projects, active developments, and bespoke systems. Honest technical documentation and architecture overviews.',
   });
 

@@ -7,7 +7,7 @@ interface PageMetadataOptions {
   noIndex?: boolean;
 }
 
-const SITE_URL = 'https://frontend-production-650e.up.railway.app';
+const SITE_URL = 'https://www.aiautomy.com';
 
 function setMetaByName(name: string, content: string) {
   let el = document.querySelector(`meta[name="${name}"]`);
@@ -42,9 +42,9 @@ function setCanonical(href: string) {
 export function usePageMetadata({ title, description, noIndex }: PageMetadataOptions) {
   useEffect(() => {
     // Update document title
-    const fullTitle = title.includes('AI AGENT STUDIO')
+    const fullTitle = title.includes('AIAUTOMY')
       ? title
-      : `${title} | AI AGENT STUDIO`;
+      : `${title} | AIAUTOMY`;
     document.title = fullTitle;
 
     // Meta description

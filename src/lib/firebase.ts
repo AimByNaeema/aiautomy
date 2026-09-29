@@ -588,7 +588,7 @@ export async function subscribeNewsletter(
     console.warn('[Firestore] Newsletter subscribe note:', err);
   }
 
-  return { success: true, message: 'Thank you for subscribing to AI AGENT STUDIO updates.' };
+  return { success: true, message: 'Thank you for subscribing to AIAUTOMY updates.' };
 }
 
 /**

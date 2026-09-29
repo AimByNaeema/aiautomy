@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                 AI
               </div>
               <span className="text-base font-bold text-white tracking-tight">
-                AI AGENT <span className="text-orange-500 text-xs uppercase px-1.5 py-0.5 rounded bg-orange-500/10 border border-orange-500/30">STUDIO</span>
+                AI<span className="text-orange-500 text-xs uppercase px-1.5 py-0.5 rounded bg-orange-500/10 border border-orange-500/30">AUTOMY</span>
               </span>
             </Link>
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
@@ -143,7 +143,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar with Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>
-            © 2026 AI AGENT STUDIO. All rights reserved. Built for modern businesses.
+            © 2026 AIAUTOMY. All rights reserved. Built for modern businesses.
           </div>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1">

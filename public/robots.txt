@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /login
 
-Sitemap: https://frontend-production-650e.up.railway.app/sitemap.xml
+Sitemap: https://www.aiautomy.com/sitemap.xml

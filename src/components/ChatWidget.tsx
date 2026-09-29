@@ -4,7 +4,7 @@ import { fetchPublishedServices, API_BASE_URL } from '../lib/api';
 import { logChatMessages } from '../lib/agent';
 import { ServiceRecord } from '../types';
 
-// Floating AI chat widget for AI AGENT STUDIO.
+// Floating AI chat widget for AIAUTOMY.
 // Drop this file into src/components/ChatWidget.tsx and render <ChatWidget />
 // once near the bottom of your root layout (e.g. in App.tsx, alongside
 // <Navbar /> and <Footer />) so it appears on every page.
@@ -26,7 +26,7 @@ type ChatMessage = {
 const GREETING: ChatMessage = {
   role: 'assistant',
   content:
-    "Hi! I'm the AI AGENT STUDIO assistant. Ask me about AI agents, websites, automation, or anything else — and if you're ready to start, I can point you to the project form.",
+    "Hi! I'm the AIAUTOMY assistant. Ask me about AI agents, websites, automation, or anything else — and if you're ready to start, I can point you to the project form.",
 };
 
 type Provider = 'claude' | 'gemini';
@@ -135,7 +135,7 @@ export default function ChatWidget() {
             }}
           >
             <div>
-              <div style={{ color: '#fff', fontWeight: 600, fontSize: 14 }}>AI AGENT STUDIO</div>
+              <div style={{ color: '#fff', fontWeight: 600, fontSize: 14 }}>AIAUTOMY</div>
               <div style={{ color: '#9aa3b2', fontSize: 12 }}>AI Assistant</div>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>

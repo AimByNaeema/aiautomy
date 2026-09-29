@@ -18,7 +18,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 
 export const PricingPage: React.FC = () => {
   usePageMetadata({
-    title: 'Pricing & Engagement Models | AI AGENT STUDIO',
+    title: 'Pricing & Engagement Models | AIAUTOMY',
     description: 'Transparent project pricing and engagement models for custom websites, AI digital employees, and complete digital business systems.',
   });
 

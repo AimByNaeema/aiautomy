@@ -1,13 +1,13 @@
-# CLAUDE.md — AI AGENT STUDIO
+# CLAUDE.md — AIAUTOMY
 
 This file gives Claude Code the context it needs to work safely and consistently in this repository. Read it before making any change.
 
 ## What this project is
 
-**AI AGENT STUDIO** (brand name, all caps) is the marketing/agency website for a digital studio that builds custom AI agents, websites, ecommerce systems, and automation workflows for other businesses. It is a client-facing React single-page site plus a small serverless backend and an admin console for managing leads and a semi-autonomous "AI Agent" that assists with SEO scans, lead-reply drafting, and website chat support.
+**AIAUTOMY** (brand name, all caps) is the marketing/agency website for a digital studio that builds custom AI agents, websites, ecommerce systems, and automation workflows for other businesses. It is a client-facing React single-page site plus a small serverless backend and an admin console for managing leads and a semi-autonomous "AI Agent" that assists with SEO scans, lead-reply drafting, and website chat support.
 
-- Live site: https://ai-agent-studio-beige.vercel.app/
-- Repo: https://github.com/AimByNaeema/Ai-agent-studio
+- Live site: https://www.aiautomy.com/ (canonical domain)
+- Repo: https://github.com/AimByNaeema/aiautomy
 - Inquiries inbox: `aiagentstudioo@gmail.com`
 - Admin accounts (see `api/_lib/verifyAdminAuth.js`): `aimbynaeema@gmail.com`, `aiagentstudioo@gmail.com`
 

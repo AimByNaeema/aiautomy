@@ -35,7 +35,7 @@ export const AnalyticsSection: React.FC = () => {
               Unified Analytics & Growth Diagnostics.
             </h2>
             <p className="text-base text-slate-300">
-              No more wading through spreadsheets or disjointed ad dashboards. AI AGENT STUDIO surfaces the metrics that truly drive gross profit and highlights your highest-leverage growth actions.
+              No more wading through spreadsheets or disjointed ad dashboards. AIAUTOMY surfaces the metrics that truly drive gross profit and highlights your highest-leverage growth actions.
             </p>
           </div>
 

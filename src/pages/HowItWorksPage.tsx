@@ -23,7 +23,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 
 export const HowItWorksPage: React.FC = () => {
   usePageMetadata({
-    title: 'How We Work: Methodology & Security Controls | AI AGENT STUDIO',
+    title: 'How We Work: Methodology & Security Controls | AIAUTOMY',
     description: 'Our disciplined 6-step methodology for designing, building, and deploying custom websites, AI digital employees, and automation workflows.',
   });
 

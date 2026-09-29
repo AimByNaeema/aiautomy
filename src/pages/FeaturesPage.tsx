@@ -255,7 +255,7 @@ export const FeaturesPage: React.FC = () => {
             Engineered for <span className="text-orange-500">Autonomous Commerce</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-300">
-            A comprehensive overview of the specialized features that make AI AGENT STUDIO the highest-ROI intelligence layer for modern brands.
+            A comprehensive overview of the specialized features that make AIAUTOMY the highest-ROI intelligence layer for modern brands.
           </p>
         </div>
 
@@ -335,7 +335,7 @@ export const FeaturesPage: React.FC = () => {
               Competitive Benchmark
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Why Brands Choose AI AGENT STUDIO
+              Why Brands Choose AIAUTOMY
             </h2>
             <p className="text-xs sm:text-sm text-slate-400">
               See how our synchronized multi-agent system compares against fragmented legacy alternatives.
@@ -348,7 +348,7 @@ export const FeaturesPage: React.FC = () => {
                 <tr className="border-b border-slate-800 text-slate-400 font-mono uppercase text-[10px]">
                   <th className="py-3 px-4">Core Capability</th>
                   <th className="py-3 px-4 text-orange-400 font-bold bg-orange-500/10 rounded-t-lg">
-                    AI AGENT STUDIO
+                    AIAUTOMY
                   </th>
                   <th className="py-3 px-4">Point SEO/Ad Tools</th>
                   <th className="py-3 px-4">Generic AI Chatbots</th>

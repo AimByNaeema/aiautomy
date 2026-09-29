@@ -335,7 +335,7 @@ router.get('/chat-sessions', requireAdmin, async (_req, res) => {
 // Capability 3: contact-form lead reply drafting — never auto-sent.
 // ============================================================================
 
-const LEAD_DRAFT_SYSTEM_PROMPT = `You are drafting a reply, on behalf of a human team member at AI AGENT STUDIO, to a real prospective-client inquiry submitted through the website's contact form.
+const LEAD_DRAFT_SYSTEM_PROMPT = `You are drafting a reply, on behalf of a human team member at AIAUTOMY, to a real prospective-client inquiry submitted through the website's contact form.
 
 You will be given the lead's actual submitted fields and the company's actual published service catalog below. Follow these rules strictly:
 - Use ONLY the facts provided to you. Do not invent prices, timelines, guarantees, team member names, or past client results.

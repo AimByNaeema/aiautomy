@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Express + PostgreSQL backend for AI AGENT STUDIO (Railway migration, replaces Firebase).",
+  "description": "Express + PostgreSQL backend for AIAUTOMY (Railway migration, replaces Firebase).",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

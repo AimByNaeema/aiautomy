@@ -1,5 +1,5 @@
 // ============================================================================
-// AI AGENT STUDIO — backend API client (Railway migration)
+// AIAUTOMY — backend API client (Railway migration)
 //
 // Replaces src/lib/firebase.ts. Every exported function keeps the exact same
 // name and return shape it had before, so every component that previously

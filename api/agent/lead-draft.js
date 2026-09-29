@@ -9,7 +9,7 @@ import { verifyAdminAuth } from '../_lib/verifyAdminAuth.js';
 // database itself and does not send anything — it only returns drafted
 // text for a human to review, edit, and send manually.
 
-const SYSTEM_PROMPT = `You are drafting a reply, on behalf of a human team member at AI AGENT STUDIO, to a real prospective-client inquiry submitted through the website's contact form.
+const SYSTEM_PROMPT = `You are drafting a reply, on behalf of a human team member at AIAUTOMY, to a real prospective-client inquiry submitted through the website's contact form.
 
 You will be given the lead's actual submitted fields and the company's actual published service catalog below. Follow these rules strictly:
 - Use ONLY the facts provided to you. Do not invent prices, timelines, guarantees, team member names, or past client results.

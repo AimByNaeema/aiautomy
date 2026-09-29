@@ -34,7 +34,7 @@ export const SocialAdsSection: React.FC = () => {
               Creative Direction & High-ROAS Ad Concepts.
             </h2>
             <p className="text-base text-slate-300">
-              Eliminate ad fatigue and rising acquisition costs. AI AGENT STUDIO formulates high-retention hooks, UGC scripts, and intent-driven ad copy for every major channel.
+              Eliminate ad fatigue and rising acquisition costs. AIAUTOMY formulates high-retention hooks, UGC scripts, and intent-driven ad copy for every major channel.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ import { usePageMetadata } from '../hooks/usePageMetadata';
 
 export const WebDevelopmentPage: React.FC = () => {
   usePageMetadata({
-    title: 'Modern Web Development & Digital Systems | AI AGENT STUDIO',
+    title: 'Modern Web Development & Digital Systems | AIAUTOMY',
     description: 'High-performance business websites, ecommerce systems, web applications, and client portals built with modern full-stack architectures.',
   });
 

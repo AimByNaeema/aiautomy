@@ -83,7 +83,7 @@ export const GetStartedModal: React.FC<GetStartedModalProps> = ({
 
       setIsLoading(false);
       onClose();
-      onSuccess(`Welcome to AI AGENT STUDIO! Connected ${storeName || 'store'} to the ${planTitle} evaluation.`);
+      onSuccess(`Welcome to AIAUTOMY! Connected ${storeName || 'store'} to the ${planTitle} evaluation.`);
     } catch (err: any) {
       setErrorMessage(err?.message || 'A network error occurred. Please try again.');
       setIsLoading(false);
@@ -455,7 +455,7 @@ export const StartProjectModal: React.FC<StartProjectModalProps> = ({
           <div className="flex items-center justify-between pt-2">
             <span className="text-[11px] text-slate-400 flex items-center gap-1">
               <Lock className="w-3 h-3 text-emerald-400" />
-              <span>Directly transmitted to AI AGENT STUDIO</span>
+              <span>Directly transmitted to AIAUTOMY</span>
             </span>
             <button
               type="submit"
@@ -500,7 +500,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onSucce
     setTimeout(() => {
       setIsLoading(false);
       onClose();
-      onSuccess(`Signed in to AI AGENT STUDIO console as ${email || 'authorized user'}.`);
+      onSuccess(`Signed in to AIAUTOMY console as ${email || 'authorized user'}.`);
     }, 800);
   };
 

@@ -481,7 +481,7 @@ export async function subscribeNewsletter(
     }
   }
 
-  return { success: true, message: 'Thank you for subscribing to AI AGENT STUDIO briefing updates.' };
+  return { success: true, message: 'Thank you for subscribing to AIAUTOMY briefing updates.' };
 }
 
 /**

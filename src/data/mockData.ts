@@ -689,8 +689,8 @@ export const FAQS: FaqItem[] = [
   {
     id: 'faq-1',
     category: 'Overview',
-    question: 'What is AI AGENT STUDIO?',
-    answer: 'AI AGENT STUDIO is an intelligent software platform that acts as a coordinated digital growth team for modern ecommerce brands. It combines 9 specialized AI capabilities—from global market research and product whitespace discovery to website building, SEO listing optimization, marketing campaign planning, social ad analysis, and real-time conversion diagnostics—into one cohesive system.',
+    question: 'What is AIAUTOMY?',
+    answer: 'AIAUTOMY is an intelligent software platform that acts as a coordinated digital growth team for modern ecommerce brands. It combines 9 specialized AI capabilities—from global market research and product whitespace discovery to website building, SEO listing optimization, marketing campaign planning, social ad analysis, and real-time conversion diagnostics—into one cohesive system.',
   },
   {
     id: 'faq-2',
@@ -702,7 +702,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-3',
     category: 'Overview',
     question: 'Can it research global markets?',
-    answer: 'Yes. AI AGENT STUDIO tracks consumer search volume, competitive saturation, price elasticity, and regulatory notes across major global trade corridors including the United States, United Kingdom, European Union, United Arab Emirates, and Asia Pacific markets.',
+    answer: 'Yes. AIAUTOMY tracks consumer search volume, competitive saturation, price elasticity, and regulatory notes across major global trade corridors including the United States, United Kingdom, European Union, United Arab Emirates, and Asia Pacific markets.',
   },
   {
     id: 'faq-4',
@@ -714,7 +714,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-5',
     category: 'Operations & Approval',
     question: 'Does it automatically make changes to my store?',
-    answer: 'No. AI AGENT STUDIO strictly operates with human-in-the-loop governance. It identifies opportunities, drafts strategies, and generates publication-ready assets, but will NEVER push price changes, update live product listings, or execute ad budgets without your explicit review and approval.',
+    answer: 'No. AIAUTOMY strictly operates with human-in-the-loop governance. It identifies opportunities, drafts strategies, and generates publication-ready assets, but will NEVER push price changes, update live product listings, or execute ad budgets without your explicit review and approval.',
   },
   {
     id: 'faq-6',
