@@ -204,7 +204,7 @@ export const AiAgentsPage: React.FC = () => {
               </div>
               <h3 className="text-base font-bold text-white">Grounded Knowledge</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Agents answer questions based strictly on your verified menus, product specs, pricing schedules, and company policies — eliminating guesswork and hallucinations.
+                Agents answer questions based strictly on your verified menus, product specs, pricing schedules, and company policies — reducing guesswork and the risk of made-up answers.
               </p>
             </div>
 

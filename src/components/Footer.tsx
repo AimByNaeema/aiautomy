@@ -51,8 +51,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5 text-slate-400 pt-0.5">
                 <span>Inquiries:</span>
-                <a href="mailto:aiagentstudioo@gmail.com" className="text-orange-400 hover:underline font-mono">
-                  aiagentstudioo@gmail.com
+                <a href="mailto:aiautomys@gmail.com" className="text-orange-400 hover:underline font-mono">
+                  aiautomys@gmail.com
                 </a>
               </div>
             </div>

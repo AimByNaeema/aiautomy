@@ -85,7 +85,7 @@ export const ContactPage: React.FC = () => {
         setErrorMessage(res.error || 'Failed to send inquiry. Please try again or email us directly.');
       }
     } catch (err) {
-      setErrorMessage('An unexpected error occurred. Please email us at aiagentstudioo@gmail.com.');
+      setErrorMessage('An unexpected error occurred. Please email us at aiautomys@gmail.com.');
     } finally {
       setIsSubmitting(false);
     }
@@ -128,8 +128,8 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-slate-400 text-[10px] uppercase font-mono block">Direct Studio Email</span>
-                    <a href="mailto:aiagentstudioo@gmail.com" className="font-semibold text-white hover:text-orange-400 font-mono text-xs">
-                      aiagentstudioo@gmail.com
+                    <a href="mailto:aiautomys@gmail.com" className="font-semibold text-white hover:text-orange-400 font-mono text-xs">
+                      aiautomys@gmail.com
                     </a>
                   </div>
                 </div>

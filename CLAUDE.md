@@ -8,7 +8,7 @@ This file gives Claude Code the context it needs to work safely and consistently
 
 - Live site: https://www.aiautomy.com/ (canonical domain)
 - Repo: https://github.com/AimByNaeema/aiautomy
-- Inquiries inbox: `aiagentstudioo@gmail.com`
+- Inquiries inbox: `aiautomys@gmail.com`
 - Admin accounts (see `api/_lib/verifyAdminAuth.js`): `aimbynaeema@gmail.com`, `aiagentstudioo@gmail.com`
 
 ## Golden rule: do not change the design

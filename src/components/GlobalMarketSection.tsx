@@ -93,7 +93,7 @@ export const GlobalMarketSection: React.FC = () => {
         'Accurate answers derived strictly from your documents',
         'Seamless human handoff with full conversation summaries',
         'Ticket tagging, prioritization, and categorization',
-        'Zero hallucination boundaries for policy inquiries',
+        'Answers grounded in your verified policies',
       ],
       link: '/ai-agents',
     },
@@ -221,7 +221,7 @@ export const GlobalMarketSection: React.FC = () => {
                   <span>Explore AI Agent Specs</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
-                <span className="text-[11px] text-slate-500 font-mono">SOC2 Aligned Architecture</span>
+                <span className="text-[11px] text-slate-500 font-mono">Security-First Architecture</span>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ export const GlobalMarketSection: React.FC = () => {
                     Human-in-the-Loop Safeguards
                   </span>
                   <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-mono border border-emerald-500/20">
-                    Zero Hallucination Gate
+                    Grounded Answer Gate
                   </span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">

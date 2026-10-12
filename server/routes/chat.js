@@ -33,7 +33,7 @@ What AIAUTOMY offers (use this, don't invent more):
 ${buildOfferingsList(services)}
 
 Pricing is project-based / custom quote — never state a specific number.
-Contact email: aiagentstudioo@gmail.com
+Contact email: aiautomys@gmail.com
 
 Your job:
 1. Answer visitor questions about these services in a friendly, professional,

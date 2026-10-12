@@ -39,7 +39,7 @@ export const FaqSection: React.FC = () => {
       id: 'faq-6',
       question: 'How do we get started on a project?',
       answer:
-        'Simply submit our project intake form on the Contact page or email us directly at aiagentstudioo@gmail.com. We will review your business requirements, prepare a discovery roadmap, and provide a transparent, itemized proposal tailored to your goals.',
+        'Simply submit our project intake form on the Contact page or email us directly at aiautomys@gmail.com. We will review your business requirements, prepare a discovery roadmap, and provide a transparent, itemized proposal tailored to your goals.',
     },
   ];
 
