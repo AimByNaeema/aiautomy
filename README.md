@@ -4,7 +4,7 @@
 **AIAUTOMY** is powered by Google Cloud Firestore and Firebase Authentication for enterprise-grade, real-time data persistence and access control.
 
 - **Brand:** AIAUTOMY
-- **Inquiries:** `aiagentstudioo@gmail.com`
+- **Inquiries:** `aiautomys@gmail.com`
 - **Core Offerings:** Custom AI Agents, Web Development, Ecommerce Solutions, AI Business Automation, Custom Digital Solutions.
 - **Flagship Project:** E-Commerce Growth AI (*In Development / Coming Soon*).
 
@@ -27,7 +27,7 @@ VITE_FIREBASE_STORAGE_BUCKET=mimetic-decorator-26shk.firebasestorage.app
 VITE_FIREBASE_MESSAGING_SENDER_ID=443666498518
 VITE_FIREBASE_APP_ID=1:443666498518:web:be99a59a4bccfcc0d0da77
 
-CONTACT_NOTIFICATION_EMAIL=aiagentstudioo@gmail.com
+CONTACT_NOTIFICATION_EMAIL=aiautomys@gmail.com
 ```
 
 ---

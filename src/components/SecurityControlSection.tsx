@@ -195,7 +195,7 @@ export const SecurityControlSection: React.FC = () => {
               </div>
 
               <div className="pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
-                <span>Zero Hallucination Guarantee</span>
+                <span>Grounded Answers Only</span>
                 <Link to="/how-it-works" className="text-orange-400 hover:underline">
                   Learn more &rarr;
                 </Link>

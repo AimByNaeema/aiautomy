@@ -37,7 +37,7 @@ export const FinalCtaSection: React.FC = () => {
 
           <a
             id="btn-final-secondary-cta"
-            href="mailto:aiagentstudioo@gmail.com"
+            href="mailto:aiautomys@gmail.com"
             className="w-full sm:w-auto px-7 py-4 text-base font-medium text-slate-200 hover:text-white bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl transition-colors flex items-center justify-center gap-2 cursor-pointer"
           >
             <Mail className="w-4 h-4 text-orange-400" />

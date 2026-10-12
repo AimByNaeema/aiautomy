@@ -61,7 +61,7 @@ export const PricingPage: React.FC = () => {
         'Human approval gates for sensitive operational actions',
         'Floating website widget or messaging webhook integration',
         'Full conversation logs and telemetry tracking in CRM',
-        'No hallucination guardrails & structured escalation paths',
+        'Grounding guardrails & structured escalation paths',
         '30 days post-launch calibration & prompt refinement',
       ],
       popular: true,
