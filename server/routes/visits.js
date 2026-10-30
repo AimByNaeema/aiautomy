@@ -23,6 +23,29 @@ const BOT = /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|python|c
 const SKIP_PATHS = ['/admin', '/login'];
 const OWN_HOSTS = ['aiautomy.com', 'www.aiautomy.com'];
 
+// Same statements as server/db/schema.sql, so the table exists even if the
+// deploy never ran `npm run migrate`. Idempotent; runs once per process.
+let tableReady = null;
+function ensureTable() {
+  if (!tableReady) {
+    tableReady = pool.query(`
+      CREATE TABLE IF NOT EXISTS page_views (
+        id BIGSERIAL PRIMARY KEY,
+        viewed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+        path TEXT NOT NULL,
+        referrer_host TEXT,
+        device TEXT NOT NULL DEFAULT 'desktop' CHECK (device IN ('desktop', 'mobile')),
+        visitor_hash TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS idx_page_views_viewed_at ON page_views(viewed_at DESC);
+    `).catch((err) => {
+      tableReady = null;
+      throw err;
+    });
+  }
+  return tableReady;
+}
+
 function clientIp(req) {
   const fwd = (req.headers['x-forwarded-for'] || '').split(',')[0].trim();
   return fwd || req.socket.remoteAddress || '';
@@ -56,6 +79,7 @@ router.post('/', visitLimiter, async (req, res) => {
   const visitor = createHash('sha256').update(`${clientIp(req)}|${ua}|${day}|${salt}`).digest('hex').slice(0, 32);
   const device = /mobile|android|iphone|ipad/i.test(ua) ? 'mobile' : 'desktop';
   try {
+    await ensureTable();
     await pool.query(
       'INSERT INTO page_views (path, referrer_host, device, visitor_hash) VALUES ($1, $2, $3, $4)',
       [path, referrerHost(req.body?.referrer), device, visitor]
@@ -80,6 +104,7 @@ router.get('/summary', async (req, res) => {
   if (!readTokenOk(req)) return res.status(401).json({ error: 'Not authorized.' });
   const hours = Math.min(Math.max(parseInt(req.query.hours, 10) || 24, 1), 24 * 31);
   try {
+    await ensureTable();
     const since = `now() - interval '${hours} hours'`;
     const [tot, pages, refs, days, dev] = await Promise.all([
       pool.query(`SELECT count(*)::int AS views, count(DISTINCT visitor_hash)::int AS visitors FROM page_views WHERE viewed_at > ${since}`),
