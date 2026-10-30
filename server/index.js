@@ -14,6 +14,7 @@ import servicesRoutes from './routes/services.js';
 import agentCategoriesRoutes from './routes/agentCategories.js';
 import agentRoutes from './routes/agent.js';
 import chatRoutes from './routes/chat.js';
+import visitsRoutes from './routes/visits.js';
 
 const app = express();
 
@@ -59,6 +60,7 @@ app.use('/api/services', servicesRoutes);
 app.use('/api/agent-categories', agentCategoriesRoutes);
 app.use('/api/agent', agentRoutes);
 app.use('/api/chat', chatLimiter, chatRoutes);
+app.use('/api/visits', visitsRoutes);
 
 app.use((_req, res) => {
   res.status(404).json({ error: 'Not found' });

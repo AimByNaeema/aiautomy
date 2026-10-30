@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
+import { PageViewTracker } from './components/PageViewTracker';
 import { ToastNotification } from './components/Modals';
 import ChatWidget from './components/ChatWidget';
 
@@ -40,6 +41,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <PageViewTracker />
       <div className="min-h-screen bg-slate-950 text-slate-900 font-sans selection:bg-orange-500 selection:text-white flex flex-col justify-between">
         {/* Global Navigation Bar */}
         <Navbar />
