@@ -212,3 +212,19 @@ ON CONFLICT (email) DO NOTHING;
 -- password hash to source control). See server/db/migrate.js — it applies
 -- ADMIN_SEED_PASSWORD_HASH (a Railway environment variable, never in Git)
 -- to any admin row that doesn't have a password_hash yet.
+
+-- ----------------------------------------------------------------------------
+-- 10. page_views — cookieless visitor counter (no raw IP stored)
+-- One row per page view sent by the site itself (src/components/PageViewTracker.tsx).
+-- visitor_hash = sha256(ip + user agent + day + secret): counts distinct
+-- visitors per day without keeping who they are; changes every day.
+-- ----------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS page_views (
+  id BIGSERIAL PRIMARY KEY,
+  viewed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  path TEXT NOT NULL,
+  referrer_host TEXT,
+  device TEXT NOT NULL DEFAULT 'desktop' CHECK (device IN ('desktop', 'mobile')),
+  visitor_hash TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_page_views_viewed_at ON page_views(viewed_at DESC);
