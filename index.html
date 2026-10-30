@@ -36,6 +36,11 @@
   <body class="bg-slate-50 text-slate-900 antialiased font-sans selection:bg-orange-500 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Vercel Web Analytics (cookieless visitor counts; no npm package, no visual change) -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
 
