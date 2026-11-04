@@ -27,6 +27,8 @@ import { AiAgentsPage } from './pages/AiAgentsPage';
 import { WebDevelopmentPage } from './pages/WebDevelopmentPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ContactPage } from './pages/ContactPage';
+import { UKPage } from './pages/UKPage';
+import { USPage } from './pages/USPage';
 
 export default function App() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -59,6 +61,8 @@ export default function App() {
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/uk" element={<UKPage />} />
+            <Route path="/us" element={<USPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/get-started" element={<GetStartedPage />} />
