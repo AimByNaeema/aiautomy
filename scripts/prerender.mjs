@@ -51,9 +51,11 @@ const ROUTES = [
   '/resources',
   '/get-started',
   '/contact',
+    '/uk',
+    '/us',
 ];
 
-function waitForServer(url, tries = 40) {
+function waitForServer(url, tries = 40)
   return new Promise((resolve, reject) => {
     const attempt = (n) => {
       fetch(url)
