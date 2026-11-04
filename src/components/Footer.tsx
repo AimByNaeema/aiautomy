@@ -113,6 +113,8 @@ export const Footer: React.FC = () => {
               <li><Link to="/solutions?goal=automate" className="hover:text-white transition-colors">Automate Work</Link></li>
               <li><Link to="/solutions?goal=ecommerce" className="hover:text-white transition-colors">Ecommerce Operations</Link></li>
               <li><Link to="/solutions?goal=system" className="hover:text-white transition-colors">Custom Business System</Link></li>
+              <li><Link to="/uk" className="hover:text-white transition-colors">UK Small Businesses</Link></li>
+              <li><Link to="/us" className="hover:text-white transition-colors">US Small Businesses</Link></li>
             </ul>
           </div>
 
@@ -160,4 +162,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
